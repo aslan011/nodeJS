@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  form(method="POST", action="/new")
+    p User
+      input(type="text", name="user" placeholder="user")
+    p Message
+      input(type="text", name="text" placeholder="text")
+    p
+      input(type="submit" action="submit")
